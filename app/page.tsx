@@ -3,6 +3,7 @@ import React from 'react';
 import CTA from '@/components/CTA';
 import CompanionCard from '@/components/ui/CompanionCard';
 import CompanionList from '@/components/ui/CompanionList';
+import { recentSessions } from '@/constants';
 
 const Page = () => {
   return (
@@ -36,7 +37,11 @@ const Page = () => {
       </section>
 
       <section className="home-section">
-        <CompanionList />
+        <CompanionList
+          title="Recently completed session"
+          companions={recentSessions}
+          classNames="w-2/3 max-lg:w-full"
+        />
         <CTA />
       </section>
     </main>
