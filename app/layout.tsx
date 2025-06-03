@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Bricolage_Grotesque } from 'next/font/google';
 
-import Navbar from '@/components/ui/Navbar';
+import Navbar from '@/components/Navbar';
 
 const bricolage = Bricolage_Grotesque({
   variable: '--font-bricolage',
